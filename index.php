@@ -1,7 +1,12 @@
 
 <!DOCTYPE html>
+<html>
+	<head>
+		<title>Food ipsum</title>
+	</head>
 <body>
-<h1>Welcome to the food blog.</h1>
+
+<h1>Welcome to the food ipsum blog.</h1>
 
 <?php
 
@@ -21,7 +26,7 @@ if ($connection) {
 }
 
 while ($row = mysql_fetch_array($result)) {
-	echo "<h2>" . "<a href=/Zoe/lamp-blog/articles.php?ID=" . $row['ID'] . ">" . $row['title'] . "</a>" . "</h2>" . "By " . $row['author'] . "<br/>" . "<p>" . $row['body'] . "</p>";
+	echo "<article>" . "<h2>" . "<a href=/Zoe/lamp-blog/articles.php?ID=" . $row['ID'] . ">" . $row['title'] . "</a>" . "</h2>" . "By " . $row['author'] . "<br/>" . "<p>" . $row['body'] . "</p>" . "</article>";
 }
 
 mysql_close($connection);
