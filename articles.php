@@ -5,8 +5,9 @@
 		<title>Food ipsum</title>
 	</head>
 <body>
-
-<h1>Welcome to the food ipsum blog.</h1>
+<header>
+	<h1>Welcome to the food ipsum blog.</h1>
+</header>
 
 <?php
 
