@@ -1,0 +1,28 @@
+body {
+	background-color: #FFFFFF;
+}
+
+h1 {
+	font-family: "Helvetica";
+	font-size: 2em;
+	text-align: center;
+}
+
+
+h2 {
+	font-family: "Helvetica";
+	font-style: italic;
+	color: "black";
+}
+
+
+
+article {
+	font-family: "Arial";
+
+}
+
+
+a {
+	text-decoration: none;
+}
