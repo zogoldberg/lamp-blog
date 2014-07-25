@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+<html>
+	<head>
+		<title>Food ipsum</title>
+	</head>
 <body>
 
-<h2>Welcome to the food blog.</h2>
+<h1>Welcome to the food ipsum blog.</h1>
 
 <?php
 
