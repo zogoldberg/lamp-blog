@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <body>
+
 <h2>Welcome to the food blog.</h2>
 
 <?php
@@ -21,7 +22,7 @@ if ($connection) {
 
 $row = mysql_fetch_array($result);
 
-echo "<h1>" . $row['title'] . "</h1>" . "<br/>" . $row['author'] . "<br/>" . $row['body'] . "<br/>";
+echo "<h1>" . $row['title'] . "</h1>" . "By " . $row['author'] . "<br/>" . "<p>" . $row['body'] . "</p>";
 
 
 mysql_close($connection);
