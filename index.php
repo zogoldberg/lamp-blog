@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Food ipsum</title>
 	</head>
 <body>
@@ -26,7 +27,7 @@ if ($connection) {
 }
 
 while ($row = mysql_fetch_array($result)) {
-	echo "<article>" . "<h2>" . "<a href=/Zoe/lamp-blog/articles.php?ID=" . $row['ID'] . ">" . $row['title'] . "</a>" . "</h2>" . "By " . $row['author'] . "<br/>" . "<p>" . $row['body'] . "</p>" . "</article>";
+	echo "<h2>" . "<a href=/Zoe/lamp-blog/articles.php?ID=" . $row['ID'] . ">" . $row['title'] . "</a>" . "</h2>" . "<h4>" . "By " . $row['author'] . "</h4>" . "<article>" . "<p>" . $row['body'] . "</p>" . "</article>";
 }
 
 mysql_close($connection);
