@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Food ipsum</title>
 	</head>
 <body>
@@ -26,7 +27,7 @@ if ($connection) {
 
 $row = mysql_fetch_array($result);
 
-echo "<h1>" . $row['title'] . "</h1>" . "By " . $row['author'] . "<br/>" . "<p>" . $row['body'] . "</p>";
+echo "<h2>" . $row['title'] . "</h2>" . "<h4>" . "By " . $row['author'] . "</h4>" . "<article>" . "<p>" . $row['body'] . "</p>" . "</article>";
 
 
 mysql_close($connection);
