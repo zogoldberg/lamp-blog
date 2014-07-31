@@ -2,12 +2,17 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="scripts/jquery-1.11.1.min.js"></script>
+ 		<script src="scripts/blog.js"></script>
 		<title>Food ipsum</title>
 	</head>
 <body>
-<header>
-	<h1>Welcome to the food ipsum blog.</h1>
-</header>
+	<div id="resize">
+		<img class ="button" src="https://lh5.googleusercontent.com/ZWpPFnzCu-7XDAcMhfujN0XwbfKv9qvUs5ZyEH_g9BeaRYChNXIho9zIvscNKOgiN0T9DZVr8wxerRNDgIsLkI_MPoeauOYn9XH6OiCCppV90VtfrhgIbt2_nj-m0DHRlw">
+	</div>
+	<header>
+		<h1>Welcome to the food ipsum blog.</h1>
+	</header>
 
 <?php
 

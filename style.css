@@ -8,6 +8,16 @@ header {
 	height: 100px;
 }
 
+img {
+	display: inline-block;
+}
+
+#resize {
+	position: fixed;
+	top:22px;
+	right:10px;
+}
+
 h1 {
 	padding-top: 25px;
 	font-family: helvetica;
@@ -27,6 +37,11 @@ h2 {
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 h4 {
@@ -40,4 +55,8 @@ article {
 
 a:visited {
 	color: black;
+}
+
+.bigfont {
+	font-size: 20px;
 }
