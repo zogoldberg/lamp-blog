@@ -18,7 +18,7 @@
 
 $localhost = '127.0.0.1';
 $username = 'root';
-$password = '';
+$password = 'test54321';
 $connection = mysql_connect($localhost, $username, $password);
 
 if (!$connection) {
