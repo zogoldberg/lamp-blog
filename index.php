@@ -21,7 +21,8 @@
 
 $localhost = '127.0.0.1';
 $username = 'root';
-$password = 'test54321';
+// $password = 'test54321';
+$password = '';
 $connection = mysql_connect($localhost, $username, $password);
 
 if (!$connection) {
@@ -35,10 +36,16 @@ if ($connection) {
 }
 
 while ($row = mysql_fetch_array($result)) {
-	echo "<h2>" . "<a href=/zogoldberg/lamp-blog/articles.php?ID=" . $row['ID'] . ">" . $row['title'] . "</a>" . "</h2>" . "<h4>" . "By " . $row['author'] . "</h4>" . "<article>" . "<p>" . $row['body'] . "</p>" . "</article>";
+	echo "<h2>" . "<a href=/Zoe/lamp-blog/articles.php?ID=" . $row['ID'] . ">" . $row['title'] . "</a>" . "</h2>" . "<h4>" . "By " . $row['author'] . "</h4>" . "<article>" . "<p>" . $row['body'] . "</p>" . "</article>";
 }
 
 mysql_close($connection);
+
+// while ($row = mysql_fetch_array($result)) {
+// 	echo "<h2>" . "<a href=/zogoldberg/lamp-blog/articles.php?ID=" . $row['ID'] . ">" . $row['title'] . "</a>" . "</h2>" . "<h4>" . "By " . $row['author'] . "</h4>" . "<article>" . "<p>" . $row['body'] . "</p>" . "</article>";
+// }
+
+// mysql_close($connection);
 ?>
 
 </body>
